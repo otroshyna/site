@@ -1,0 +1,38 @@
+
+@media (max-width: 1232px) {
+    //больше планшета, но меньше ширины макета: минус поля слева и справа (1440-120-120)
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (max-width: 1023px) {
+    //стили для планшета
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .top{
+        background-image: url(img/tablet-top.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+    }
+    .for_item {
+        height: 266px;
+    }
+    .footer_logo {
+        display: none;
+    }
+    .product-content{
+        row-gap: 32px;
+    }
+}
+
+@media (max-width: 798px) {
+    .title {
+        width: 100%;
+    }
+}
