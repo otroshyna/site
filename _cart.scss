@@ -15,6 +15,7 @@
 
 .cart-order-box-content{
     display: flex;
+    align-items: flex-start;
     flex-direction: row;
     column-gap: 33px;
     flex-wrap: wrap;
@@ -106,25 +107,24 @@
         margin-bottom: 15px;
     }
     
-    &_favorites{
+    &_buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+    &_button{
         font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
         font-size: 14px;
         text-decoration-line: underline;
         color: $colorText;
-    }
-    
-    &_remove{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        text-decoration-line: underline;
-        color: $colorText;
-        padding-left: 30px;
-    }
-
+        background: transparent;
+        border: none;
+    } 
+        &_button:hover {
+            text-decoration-line: none;
+            transition-duration: 0.5s;
+        }       
 }
 
 input[type=number] {
@@ -155,9 +155,10 @@ input[type=number] {
     align-items: center;
     row-gap: 18px;
     width: 379px;
-    height: 556px;
+    //height: 556px;
     background: #F7F6F6;
     border-radius: 20px;
+    padding-bottom: 148px;
 }
 
 .form{
@@ -227,6 +228,11 @@ input[type=number] {
         font-size: 15px;
         color: $colorText;
 }
+.button_order:hover {
+    background-color: $colorText;
+    color: $colorSelect;
+    transition-duration: 0.5s;
+}
 
 .cart-order-box-buttons{
     margin-top: 18px;
@@ -252,7 +258,7 @@ input[type=number] {
         color: $colorText;
 }
 
-.button_continue:hover {
+.button:hover {
     background-color: $colorText;
     color: $colorSelect;
     transition-duration: 0.5s;

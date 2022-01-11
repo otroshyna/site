@@ -14,21 +14,7 @@
 </head>
 
 <body>
-<!--
-    <header class="top-cart center">
-        <div class="header">
-            <a href="index.html"><img src="img/logo_white.svg" alt="logo"></a>
-            <input class="top_input" type="search" placeholder="Поиск" id="Search">
-            <nav class="menu">
-                <a href="index.html" class="menu_link">Главная</a>
-                <a href="catalog.html" class="menu_link">Каталог</a>
-            </nav>
-        </div>
-        <div class="top_text">
-            <h1 class="title-catalog">Корзина</h1>
-        </div>
-    </header>
--->
+
     <header class="top-cart center">
         <div class="header">
             <a href="index.html">
@@ -39,9 +25,9 @@
                 </picture>
             </a>
             <input class="top_input" type="search" placeholder="Поиск" id="Search">
-            <nav class="menu">
-                <a href="index.html" class="menu_link">Главная</a>
-                <a href="catalog.html" class="menu_link">Каталог</a>
+            <nav class="top_menu">
+                <a href="index.html" class="top_menu_link">Главная</a>
+                <a href="catalog.html" class="top_menu_link">Каталог</a>
             </nav>
             <div class="header_links">
                 <a href="">
@@ -92,8 +78,11 @@
                             <div class="cart-product">
                                 <h3 class="cart-product_heading">Стол MENU</h3>
                                 <p class="cart-product_description">Для того чтобы трапезничать было приятно, необходим правильный обеденный стол.</p>
-                                <p class="cart-product_price">34 000 руб.</p>
-                                <p class="cart-product_favorites">Избранные<span class="cart-product_remove">Удалить</span></p>
+                                <p class="cart-product_price">34 000 руб.</p>    
+                                <div class="cart-product_buttons">
+                                    <button class="cart-product_button">Избранные</button>
+                                    <button class="cart-product_button">Удалить</button>
+                                </div>
                             </div>      
                         </div>
                         <input type="number" min="1" max="10" step="1" value="1">
@@ -110,23 +99,10 @@
                             <h3 class="cart-product_heading">Диван NASTAN</h3>
                             <p class="cart-product_description">Модель отличается простотой линий и форм, отсутствием броского декора.</p>
                             <p class="cart-product_price">80 000 руб.</p>
-                            <p class="cart-product_favorites">Избранные<span class="cart-product_remove">Удалить</span></p>
-                        </div>      
-                    </div>
-                    <input type="number" min="1" max="10" step="1" value="1">
-                </div>
-
-                <div class="cart-content-product-count">     
-                    <div class="cart-content-product">
-                        <div class="cart-img">
-                            <img src="img/cart-nastan.jpg" alt="Диван NASTAN">
-                        </div>
-                        
-                        <div class="cart-product">
-                            <h3 class="cart-product_heading">Диван NASTAN</h3>
-                            <p class="cart-product_description">Модель отличается простотой линий и форм, отсутствием броского декора.</p>
-                            <p class="cart-product_price">80 000 руб.</p>
-                            <p class="cart-product_favorites">Избранные<span class="cart-product_remove">Удалить</span></p>
+                            <div class="cart-product_buttons">
+                                <button class="cart-product_button">Избранные</button>
+                                <button class="cart-product_button">Удалить</button>
+                            </div>
                         </div>      
                     </div>
                     <input type="number" min="1" max="10" step="1" value="1">
@@ -134,7 +110,7 @@
 
                 <div class="cart-order-box-buttons">
                     <button class="button">Очистить корзину</button>
-                    <button class="button button_continue">Продолжить покупки</button>
+                    <button class="button">Продолжить покупки</button>
                 </div>
             </div>
 
@@ -196,14 +172,14 @@
             <div class="footer_info">               
                 <nav class="footer_item">                
                     <h4 class="footer_heading">Меню</h4>
-                    <a href="index.html" class="footer_menu">Главная</a>
-                    <a href="catalog.html" class="footer_menu">Каталог</a>
-                    <a href="cart.html" class="footer_menu">Корзина</a>
+                    <a href="index.html" class="footer_menu_link">Главная</a>
+                    <a href="catalog.html" class="footer_menu_link">Каталог</a>
+                    <a href="cart.html" class="footer_menu_link">Корзина</a>
                 </div>
                 <div class="footer_item">
                     <h4 class="footer_heading">Контакты</h4>
-                    <a href="tel:+79088008080" class="footer_menu">+79088008080</a>
-                    <a href="mailto:help@interier.com" class="footer_menu">help@interier.com</a>
+                    <a href="tel:+79088008080" class="footer_menu_link">+79088008080</a>
+                    <a href="mailto:help@interier.com" class="footer_menu_link">help@interier.com</a>
                     <div class="footer_sm">    
                         <a href="https://instagram.com/"><img src="img/instagram.svg" width="30" height="30" alt="Instagram"></a>
                         <a href="https://twitter.com/"><img src="img/twitter.svg" width="30" height="30" alt="Twitter"></a>

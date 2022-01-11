@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -67,6 +68,23 @@ body {
   color: #ffffff;
 }
 
+.top_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+
+.top_menu_link {
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.top_menu_link:hover {
+  text-decoration: underline;
+}
+
 .header {
   height: 76px;
   display: -webkit-box;
@@ -89,19 +107,6 @@ body {
   display: none;
 }
 
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 32px;
-}
-
-.menu_link {
-  font-size: 16px;
-  color: #ffffff;
-  text-decoration: none;
-}
-
 .nav {
   font-size: 16px;
 }
@@ -119,6 +124,11 @@ body {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #ffffff;
+}
+
+.goto_white:hover {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 .product-box {
@@ -264,6 +274,11 @@ body {
   color: #000000;
 }
 
+.goto_black:hover {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
 .footer {
   min-height: 207px;
   background: #F7F6F6;
@@ -368,11 +383,15 @@ body {
   color: #000000;
 }
 
-.footer_menu {
+.footer_menu_link {
   font-weight: 500;
   font-size: 14px;
   color: #888888;
   text-decoration: none;
+}
+
+.footer_menu_link:hover {
+  text-decoration: underline;
 }
 
 .input_email {
@@ -494,7 +513,7 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
-.disabled {
+a.disabled {
   pointer-events: none;
 }
 
@@ -516,10 +535,34 @@ ul.breadcrumb li a:hover {
   -ms-appearance: none;
   appearance: none;
   background: url("img/Polygon.png") no-repeat right center;
-  background-position: 92%;
+  background-position: 95%;
   outline: 0;
 }
 
+.select-wrapper {
+  position: relative;
+  width: 60%;
+  padding-top: 10px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+}
+
+/*
+.select-wrapper::after {
+    content: '▼';
+    position: absolute;
+    right: 9px;
+    top: 1px;
+    pointer-events: none;
+}
+*/
 .top-cart {
   height: 400px;
   background-image: url(img/cart-top.jpg);
@@ -540,6 +583,9 @@ ul.breadcrumb li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -685,25 +731,35 @@ ul.breadcrumb li a:hover {
   margin-bottom: 15px;
 }
 
-.cart-product_favorites {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  color: #000000;
+.cart-product_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 30px;
 }
 
-.cart-product_remove {
+.cart-product_button {
   font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #000000;
-  padding-left: 30px;
+  background: transparent;
+  border: none;
+}
+
+.cart-product_button:hover {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 input[type=number] {
@@ -743,9 +799,9 @@ input[type="number"]:focus {
           align-items: center;
   row-gap: 18px;
   width: 379px;
-  height: 556px;
   background: #F7F6F6;
   border-radius: 20px;
+  padding-bottom: 148px;
 }
 
 .form {
@@ -822,6 +878,13 @@ input[type="number"]:focus {
   color: #000000;
 }
 
+.button_order:hover {
+  background-color: #000000;
+  color: #ffffff;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
 .cart-order-box-buttons {
   margin-top: 18px;
   display: -webkit-box;
@@ -857,7 +920,7 @@ input[type="number"]:focus {
   color: #000000;
 }
 
-.button_continue:hover {
+.button:hover {
   background-color: #000000;
   color: #ffffff;
   -webkit-transition-duration: 0.5s;
