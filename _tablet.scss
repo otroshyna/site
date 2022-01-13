@@ -1,38 +1,129 @@
 
-@media (max-width: 1232px) {
-    //больше планшета, но меньше ширины макета: минус поля слева и справа (1440-120-120)
-    .center {
+@media (min-width: 1149px) and (max-width: 1232px){
+    .center{
         padding-left: 24px;
         padding-right: 24px;
+    }
+    .product{
+        width: 345px;
+
+        &_heading{
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &_price{
+            font-size: 18px;
+            line-height: 22px;
+        }
     }
 }
 
-@media (max-width: 1023px) {
-    //стили для планшета
-    .center {
+@media (min-width: 1024px) and (max-width: 1148px){
+    //больше планшета (834px), но меньше декстопа по макету (1440px): минус поля слева и справа (1440-120-120=1200)
+    .center{
         padding-left: 24px;
         padding-right: 24px;
     }
+    .footer_logo{
+        display: none;
+    }
+    .product-content{
+        justify-content: flex-start;
+        column-gap: 32px;
+    }
+    .product{
+        width: 345px;
 
+        &_heading{
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &_price{
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+}
+
+/*
+@media (min-width: 1000px) and (max-width: 1148px) {
+    .cart-content-product-count{
+        max-width: 540px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        column-gap: 24px;
+    } 
+}
+*/
+
+@media (min-width: 834px) and (max-width: 1023px){
+    //стили для планшета: от 834px до 1023px
+    .center{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
     .top{
         background-image: url(img/tablet-top.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center bottom;
-    }
-    .for_item {
+    }   
+    .for_item{
         height: 266px;
     }
-    .footer_logo {
-        display: none;
-    }
     .product-content{
-        row-gap: 32px;
+        justify-content: flex-start;
+        column-gap: 32px;
+    }
+    .product{
+        width: 345px;
+
+        &_heading{
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &_price{
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+    .footer_logo{
+        display: none;
     }
 }
 
-@media (max-width: 798px) {
-    .title {
+@media (min-width: 768px) and (max-width: 833px){
+    .title{
         width: 100%;
+    }
+    .cart-content-product-count{
+        max-width: 724px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        column-gap: 24px;
+    }
+    .header{
+        width: 100%;
+    }
+    .center{
+        padding-left: 24px;
+        padding-right: 24px;
+    } 
+    .product{
+        width: 345px;
+    }
+    .product-content{
+        justify-content: flex-start;
+        column-gap: 30px;
+    }
+    .footer_logo{
+        display: none;
     }
 }

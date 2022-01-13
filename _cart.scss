@@ -121,13 +121,13 @@
         background: transparent;
         border: none;
     } 
-        &_button:hover {
+        &_button:hover{
             text-decoration-line: none;
             transition-duration: 0.5s;
         }       
 }
 
-input[type=number] {
+input[type=number]{
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
@@ -143,7 +143,7 @@ input[type=number] {
     line-height: 35px;
   }
 
- input[type="number"]:focus {
+ input[type="number"]:focus{
 	outline: 1px solid #CACDD8;
     border-radius: 6px;
 }
@@ -228,7 +228,7 @@ input[type=number] {
         font-size: 15px;
         color: $colorText;
 }
-.button_order:hover {
+.button_order:hover{
     background-color: $colorText;
     color: $colorSelect;
     transition-duration: 0.5s;
@@ -258,7 +258,7 @@ input[type=number] {
         color: $colorText;
 }
 
-.button:hover {
+.button:hover{
     background-color: $colorText;
     color: $colorSelect;
     transition-duration: 0.5s;
