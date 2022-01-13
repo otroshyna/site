@@ -964,9 +964,6 @@ input[type="number"]:focus {
     -webkit-column-gap: 32px;
             column-gap: 32px;
   }
-  .product {
-    width: 345px;
-  }
   .product_heading {
     font-size: 18px;
     line-height: 22px;
@@ -1003,24 +1000,26 @@ input[type="number"]:focus {
   .for_item {
     height: 266px;
   }
-  .product-content {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-column-gap: 32px;
-            column-gap: 32px;
-  }
-  .product {
-    width: 345px;
-  }
-  .product_heading {
-    font-size: 18px;
-    line-height: 22px;
-  }
-  .product_price {
-    font-size: 18px;
-    line-height: 22px;
-  }
+  /*
+    .product-content{
+        justify-content: flex-start;
+        column-gap: 32px;
+    }
+    
+    .product{
+        width: 345px;
+
+        &_heading{
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &_price{
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+    */
   .footer_logo {
     display: none;
   }

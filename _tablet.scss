@@ -33,13 +33,10 @@
         column-gap: 32px;
     }
     .product{
-        width: 345px;
-
         &_heading{
             font-size: 18px;
             line-height: 22px;
         }
-
         &_price{
             font-size: 18px;
             line-height: 22px;
@@ -75,10 +72,12 @@
     .for_item{
         height: 266px;
     }
+    /*
     .product-content{
         justify-content: flex-start;
         column-gap: 32px;
     }
+    
     .product{
         width: 345px;
 
@@ -92,6 +91,7 @@
             line-height: 22px;
         }
     }
+    */
     .footer_logo{
         display: none;
     }
