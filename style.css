@@ -72,6 +72,24 @@ body {
   color: #ffffff;
 }
 
+.top_input:focus-within {
+  border: 1px solid white;
+}
+
+.top_input::-webkit-search-cancel-button {
+  /* Remove default */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  /* Custom styles */
+  margin-left: 16px;
+  height: 20px;
+  width: 20px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
+  cursor: pointer;
+}
+
 .top_menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -702,7 +720,6 @@ a.disabled {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 173px;
 }
 
 .cart-product {
@@ -736,6 +753,7 @@ a.disabled {
   font-size: 14px;
   color: #888888;
   margin-bottom: 16px;
+  max-width: 276px;
 }
 
 .cart-product_price {
@@ -1237,9 +1255,14 @@ input[type="number"]:focus {
 
 @media (max-width: 545px) {
   .breadcrumb-sorting {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */

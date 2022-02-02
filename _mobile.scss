@@ -139,6 +139,7 @@
         &_description{
             font-size: 12px;
             line-height: 15px;
+            //max-width: 253px;
         }
     }
 
@@ -165,7 +166,8 @@
 @media (max-width: 545px){
     //для мобилки: от 375 до 510
     .breadcrumb-sorting{
-        justify-content: flex-start;
-        //column-gap: 8px;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
     }
 }
